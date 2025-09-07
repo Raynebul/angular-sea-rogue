@@ -1,0 +1,10 @@
+<div class="card flex flex-col h-auto w-full gap-8 justify-center items-center ">
+    <div class="h1 text-5xl">Хочешь посмотреть историю игр (2000-2025)?</div>
+    <p-button label="Начать" size="large" />
+
+    <p-timeline class="w-full px-36" [value]="events" layout="horizontal" align="top">
+        <ng-template #content let-event>
+            {{ event }}
+        </ng-template>
+    </p-timeline>
+</div>
