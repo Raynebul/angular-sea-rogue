@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap');
+
+@import './mixins';
+
+$font-inter: 'Inter', serif;
+$font-unbounded: 'Unbounded', cursive;
+
+
+.start-text {
+    @include text-style($font-unbounded, 66px, 600, 110%, -0.96px);
+    color: #121212;
+}
+
+.start-text-span {
+}
+
+.start-text-span-clip {
+  background: linear-gradient(270deg,  #10ee62, #00ffaa, #10eeee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.start-text-span-clip2 {
+  background: #121212;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
