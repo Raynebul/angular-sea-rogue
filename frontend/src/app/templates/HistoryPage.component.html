@@ -1,0 +1,25 @@
+<div class="px-20 pt-20">
+
+    
+    <p-carousel (onPage)="handlePage($event)" [value]="events" contentClass="gap-24 !h-96" [numVisible]="3" [numScroll]="1" [circular]="false" > 
+        <ng-template let-product #item>
+            <div class="flex justify-center">
+                <img [src]="product.icon" class="h-24 carousel-image" alt="" icon="">
+            </div>
+        </ng-template>
+        <ng-template #footer>
+            <div class="flex flex-col gap-6 w-full items-center justify-center">
+                <!-- <p-timeline class="w-full" [value]="events" layout="horizontal" >
+                    <ng-template #marker let-event>
+                        <img [src]="event.icon" class="h-8" alt="" icon="">
+                    </ng-template>
+                    <ng-template #content let-event>
+                        
+                    </ng-template>
+                </p-timeline> -->
+                <span class="text-[48px]">{{ currentOption.year }}</span>
+
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

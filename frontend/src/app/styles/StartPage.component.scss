@@ -11,6 +11,18 @@ $font-unbounded: 'Unbounded', cursive;
     color: #121212;
 }
 
+::ng-deep .start-button {
+  transform-origin: center;
+  transition: all 0.25s ease-out !important;
+  border: none !important;
+  @include text-style($font-unbounded, 20px, 600, 110%, -0.96px);
+  &:hover {
+    transform: scale(2);
+    background: linear-gradient(106.22deg, #b6ffe1 29.04%, #99ffa3 72.72%) !important;
+    color: rgb(37, 35, 49) !important;
+  }
+}
+
 .start-text-span {
 }
 

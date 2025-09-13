@@ -1,6 +1,5 @@
 import { Component, HostListener } from '@angular/core';
 import { ImportsModule } from '../imports';
-
 @Component({
   selector: 'startPage-app',
   standalone: true,

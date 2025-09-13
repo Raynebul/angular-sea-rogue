@@ -1,8 +1,8 @@
 @mixin text-style($font, $size, $weight, $line-height, $letter-spacing) {
-  font-family: $font;
-  font-size: $size;
-  font-style: normal;
-  font-weight: $weight;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
+  font-family: $font !important;
+  font-size: $size !important;
+  font-style: normal !important;
+  font-weight: $weight !important;
+  line-height: $line-height !important;
+  letter-spacing: $letter-spacing !important;
 }
