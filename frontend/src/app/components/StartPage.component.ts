@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { ImportsModule } from '../imports';
 @Component({
   selector: 'startPage-app',
@@ -9,6 +9,7 @@ import { ImportsModule } from '../imports';
 })
 
 export class StartPageComponent {
+  
   title = 'frontend';
   events: string[];
 
@@ -25,5 +26,6 @@ export class StartPageComponent {
     this.x = event.clientX - target.left;
     this.y = event.clientY - target.top;
   }
+
 
 }

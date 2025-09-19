@@ -1,6 +1,6 @@
 <div class="px-20 pt-20">
 
-    
+    <button (click)="play()">play</button>
     <p-carousel (onPage)="handlePage($event)" [value]="events" contentClass="gap-24 !h-96" [numVisible]="3" [numScroll]="1" [circular]="false" > 
         <ng-template let-product #item>
             <div class="flex justify-center">
@@ -23,3 +23,5 @@
         </ng-template>
     </p-carousel>
 </div>
+
+<audio autoplay loop #main_theme [src]="currentOption.audio"></audio>
